@@ -37,3 +37,13 @@
    - Reformatted the file for better readability.
 
 4. Run `node server.js` to start the server.
+
+## React Server Components Implementation
+
+1. Install dependencies: `npm install`
+
+`react-server-dom-webpack` is an internal React package that provides the React Server Components (RSC) implementation for DOM environments using Webpack as the bundler
+
+`createFromFetch` allows us to turn a fetch request to an API endpoint into a React component directly. This is the magic of React server components and probably one you'll never write by hand again - your framework will always do this for you. But I wanted to demystify what it's doing for you. You make a request to an API endpoint, get a promise, and hand it to React to render
+
+2. Run `npm run dev:client` and `npm run dev:server` to start the development server.
